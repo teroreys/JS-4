@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Zadanie 19 KOD</title>
+<head>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vm;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+                        div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+ </style>
+ <script>
+    
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+</head>
+<body>
+    <div>
+    <textarea rows="33" cols="80">
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Zadanie 19</title>
+</head>
+<body>
+<script type="text/javascript">
+ function pole_movchan()
+ {
+var a_mov = parseFloat(document.getElementById('dlugosc').value);
+var b_mov = a_mov*a_mov;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_mov.toFixed(2)+" cm^2";
+ }
+ function obwod_movchan()
+ {
+var a_mov = parseFloat(document.getElementById('dlugosc').value);
+var b_mov = 4*a_mov;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_mov.toFixed(2)+" cm";
+ }
+</script>
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj długość boku: <input type="number" id="dlugosc" placeholder="podaj długość"> cm<br><br><br>
+ <input type="button" name="pole" value="Oblicz pole" Onclick="pole_movchan()"><br><br>
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_movchan()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+    </textarea>
+
+<div> <button style="margin-top:10px ;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</div>
+</body>
+</html>

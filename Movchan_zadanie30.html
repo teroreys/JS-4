@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Zadanie 30 – Movchan</title>
+             <script src="script.js"></script>
+             <style>
+                      button {
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 0.4rem;
+          background-color: red;
+          color: aliceblue;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+          scale: 1;
+          transition-duration: 150ms;
+          margin: 0.4rem;
+      }
+
+            div.f {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+            button:hover {
+          scale: 1.1;
+          transition-duration: 150ms;
+      }
+             </style>
+ </head>
+<body style="background-color: yellow;">
+ <div style="color:green;font-size:41px;">
+ <script type="text/javascript">
+ var Telefon = {
+        Marka: 'Samsung',
+        kolor: 'volcanic-silver',
+        Siec: 'T-Mobile',
+    Telefon_wyswietl_Movchan: function ()
+{
+ document.write("Dane obiektu telefon"+"<br>")
+ document.write("Dane ==> "+this.Marka + ", " + this.kolor + ", "+ this.Siec + ".")
+ }
+}
+    Telefon.Telefon_wyswietl_Movchan();
+ </script>
+ </div>
+<br>
+<div style="color:blue;font-size:26px;">
+ <br>
+Mój numer w dzienniku jest 12 i moje dane to:<br>
+ Obiekt to Telefon <br>
+ pola:<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marka<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kolor<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siec<br>
+ metoda: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telefon_wyswietl_Movchan<br>
+<div>
+        <div class="f">
+        <button onclick="close_window()">Zamknij</button>
+    </div>
+</body>
+</html>

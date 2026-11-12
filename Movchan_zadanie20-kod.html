@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Zadanie 20 KOD</title>
+<head>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vm;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+                        div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    flex-direction: column;
+                }
+ </style>
+ <script>
+    
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+</head>
+<body>
+    <div>
+    <textarea rows="54" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 20</title>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        #wynik {
+            background-color:cornflowerblue;
+            font-size: 20px;
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 18px;    
+            padding: 8px;
+        }
+
+ </style>
+ 
+     <script language="JavaScript">
+function oblicz() {
+    var Xa, Ya, Xb, Yb, Xc, Yc;
+    Xa = parseFloat(document.getElementsByName("Xa")[0].value);
+    Ya = parseFloat(document.getElementsByName("Ya")[0].value);
+    Xb = parseFloat(document.getElementsByName("Xb")[0].value);
+    Yb = parseFloat(document.getElementsByName("Yb")[0].value);
+    Xc = parseFloat(document.getElementsByName("Xc")[0].value);
+    Yc = parseFloat(document.getElementsByName("Yc")[0].value);
+            
+    var d_AB = Math.sqrt(Math.pow(Xb - Xa, 2) + Math.pow(Yb - Ya, 2));
+    var d_BC = Math.sqrt(Math.pow(Xc - Xb, 2) + Math.pow(Yc - Yb, 2));
+    var d_AC = Math.sqrt(Math.pow(Xc - Xa, 2) + Math.pow(Yc - Ya, 2));
+
+    var wynik = document.getElementById("wynik"); 
+
+    wynik.innerHTML = "Wynik: " + d_AB.toFixed(2) + " (AB) | " + d_BC.toFixed(2) + " (BC) | " + d_AC.toFixed(2) + " (AC)";
+}
+
+function okno_zamknij_movchan() { 
+    window.close(); 
+}
+    </script>
+ </head>
+<body>
+    <div style="display: flex; justify-content: left; align-self: flex-start; flex-direction: column;">
+    <input type="number" name="Xa" placeholder="Podaj współrzedną Xa: ">
+    <input type="number" name="Ya" placeholder="Podaj współrzedną Ya:">
+    <input type="number" name="Xb" placeholder="Podaj współrzedną Xb:">
+    <input type="number" name="Yb" placeholder="Podaj współrzedną Yb:">
+    <input type="number" name="Xc" placeholder="Podaj współrzedną Xc:">
+    <input type="number" name="Yc" placeholder="Podaj współrzedną Yc:">
+    </div>
+    <div id="wynik">Wynik: </div>
+    <div> <button style="margin: 10px; background-color: blue;" onclick="oblicz()">Oblicz</button> </div>
+   <div> <button style="margin: 10px;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</body>
+</html>
+    </textarea>
+
+<div> <button style="margin-top:10px ;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</div>
+</body>
+</html>

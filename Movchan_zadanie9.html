@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <head>
+        <style>
+        body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("Napisz imię");
+ if (name!=null && name!="")
+ {
+ document.write("Witaj " + name + "! jak się masz?");
+ }
+ }
+
+          function okno_zamknij_movchan()  
+                        { window.close() } 
+ 
+ </script>
+</head>
+<body>
+<button onclick="show_prompt()">Pokaż prompt box </button>
+    <div style="padding-left: 10px;"><button onclick="okno_zamknij_movchan()">zamknij okno </button></div>
+ </body>
+</html> 

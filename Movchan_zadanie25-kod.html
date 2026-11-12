@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 25 KOD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+    <textarea rows="35" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 25</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        // Autor Bohdan Movchan 
+        function oblicz() {
+            var N0 = parseFloat(prompt("Podaj N0: "));
+            var t = parseFloat(prompt("Podaj t: "));
+            var T12 = parseFloat(prompt("Podaj T1/2: "));
+            var wynik = document.getElementsByName("wynik")[0];
+            var lambda = Math.log(2) / T12;
+            var N = N0 * Math.pow(Math.E, -lambda * t);
+            wynik.innerHTML = "N0 = " + N0 +" [sztuk]<br>" + "t = " + t +" [lat]<br>" + "T1/2 = " + T12 +" [lat]<br>" + "Lamba = " +lambda.toFixed(7) +" [1/rok]<br>" + "N = " + N.toFixed(7) +" [sztuk]";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="oblicz()">Oblicz</button>
+    </div>
+        <div>       <p class="wynik" name="wynik">Wynik:</p>
+    </div>
+    <div>
+        <button onclick="close_window()">Zamknij</button>
+    </div>
+</body>
+</html>
+    </textarea>
+    </div>
+<div> <button onclick="close_window()">Zamknij </button> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 16</title>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+ </style>
+ 
+ <script language="JavaScript">
+function obliczenia () {
+    var liczba1 = prompt("Podaj pierwszą liczbę:");
+    var a_mov = parseFloat(liczba1);
+    var liczba2 = prompt("Podaj drugą liczbę:");
+    var b_mov = parseFloat(liczba2);
+    document.write(("Wczytanie liczby: A="+a_mov+" B="+b_mov+"<br>").fontcolor("green").fontsize(42));
+    document.write(("("+a_mov+"+"+b_mov+")"+"<sup>3</sup>="+a_mov+"<sup>3</sup>+3*"+a_mov+"<sup>2</sup>*"+b_mov+"+3*"+a_mov+"*"+b_mov+"<sup>2</sup>+"+b_mov+"<sup>3</sup><br>").fontcolor("green").fontsize(42));
+    var obliczenia;
+    obliczenia = ((a_mov*a_mov*a_mov) + 3*(a_mov*a_mov)*b_mov + 3*a_mov*(b_mov*b_mov) + (b_mov*b_mov*b_mov));
+    document.write(("Rozwiazanie = "+obliczenia).fontcolor("green").fontsize(42));
+}       
+
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+ </head>
+<body>
+    <div> <button onclick="obliczenia()">Oblicz</button> </div>
+   <div> <button style="margin: 10px;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</body>
+</html>

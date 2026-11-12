@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 6</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            padding: 20px;
+            font-size: 18px;
+        }
+                 div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin: 10px;
+                }
+
+                input {
+                    background-color: red;
+                    padding: 5px;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    margin: 5px;
+                }
+    </style>
+    <script>
+        function okno_zamknij_movchan()  
+                       { 
+                             window.close() 
+                       } 
+    </script>
+</head>
+<body>
+    <h1>Rodzaje okienek:</h1>
+    <ul>
+    <li>Okienko <b> alert </b>– wyświetlająca okienko dialogowe z informacją i przyciskiem OK, </li>
+    <li>Okienko <b> prompt </b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu</li>
+    <li>Okienko <b> confirm </b>służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+    </ul>
+
+    <h1>Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</h1>
+    <ol>
+        <li>
+            Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_". <br>
+           <u> Poprawne nazwy zmiennych:</u>  zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz <br>
+           <u> Błędne nazwy zmiennych:</u> 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko <br>
+        </li>
+        <li>
+            Wielkość liter ma znaczenie. <br>
+            <u> Rekord i rekord </u> to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie <br>
+            początkujących programistów <br>
+        </li>
+        <li>
+            Należy nie używać słów kluczowych JavaScript jako nazw zmiennych
+        </li>
+    </ol>
+    <h1><b> Typy zmiennych w Javascript: </b></h1>
+        W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++, typy <br>
+        zmiennych są definiowane w trakcie ich przypisywania. <br>
+        Podstawowe zmienne liczbowe w JavaScript to: <br>
+        Number --> Typ liczbowy <br>
+        <ul>
+            <li>
+                zmienna całkowite
+            </li>
+            <li>
+                zmiennoprzecinkowe  
+            </li>
+        </ul>
+
+        String --> Typ tekstowy <br>
+        Boolea --> Typ logiczny <br>
+        Null --> Pusta zawartość <br>
+        Undefined --> Typ niezidentyfikowany <br>
+        Object --> Obiekt <br>
+
+        <h1>Konwersja zmiennych:</h1>
+
+       Wczytanie zmiennej z użyciem <b> prompt </b> wykonywane jest jako ciąg znaków dlatego konieczna jest <br>
+       konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. <br>
+      <u> parseFloat(zmienna) </u>&nbsp; - konwersja zmiennej do typu float <br>
+      <u> parseInt(zmienna) </u> &nbsp; - konwersja zmiennej do typu int (liczbowego) <br>
+      <u> toString(zmienna) </u> &nbsp; - konwersja zmiennej do typu łańcuchowego <br>
+           <div><input type="button" value="zamknij okno" onclick="okno_zamknij_movchan()"/> </div>
+</body>
+</html>

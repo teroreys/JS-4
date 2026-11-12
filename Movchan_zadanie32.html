@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 32</title>
+     <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: yellow;">
+    <div style="color: green; font-size: 41px; justify-self: start;">
+        <script type="text/javascript">
+    function telefon(Marka_k, Kolor_k, Siec_k)
+    {
+         this.Marka = Marka_k;
+           this.Kolor = Kolor_k;
+               this.Siec = Siec_k;
+}   
+
+        telefon.prototype.wypisz = function() {
+            alert(this.Marka + " " + this.Kolor + " " + this.Siec)
+        };
+
+        var telefon1 = new telefon("Samsung", "Czarny","T-Mobile");
+        var telefon2 = new telefon("Google Pixel", "Bialy","Play");
+        telefon1.wypisz();
+        telefon2.wypisz();
+
+        document.write("Moje nazwisko to Movchan mam numer 12 a obiekt to telefon"+"<br>");
+        document.write("dostęp do pól telefon1 i telefon2"+"<br>");
+        document.write("czyli wypisanie danych"+"<br>");
+        document.write("telefon pierwszy =>"+" "+telefon1.Marka+" "+telefon1.Kolor+" "+telefon1.Siec+"<br>");
+        document.write("telefon drugi =>"+" "+telefon2.Marka+" "+telefon2.Kolor+" "+telefon2.Siec+"<br>");
+         
+        </script>
+    </div>
+ 
+    <div style="color: blue; font-size: 25px; justify-self: start;">
+        programowanie obiektowe: <br>
+        sposób pisania programów komputerowych, który opiera się na obiektach   
+        Słowo kluczowe prototype stosowane jest do:<br>
+        dziedziczenia właściwości i metod pomiędzy obiektami                               <br>
+        Słowo kluczowe new stosowane jest do:<br>
+        służy do tworzenia nowej instancji obiektu na podstawie funkcji konstruktora lub klasy <br>
+    <br>
+    </div>
+    <div>
+        <button onclick="close_window()">Zamknij</button>
+    </div>
+</body>
+</html>

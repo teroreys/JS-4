@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 22</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+<script>
+    function pole_Movchan(){
+
+        var a_mov = parseFloat(document.getElementsByName("a_dana_mov")[0].value);
+        var b_mov = parseFloat(document.getElementsByName("b_dana_mov")[0].value);
+
+        var wyprowadz = document.getElementsByName("wyprowadz_pole_mov")[0];
+
+        var wynik = a_mov * b_mov;
+        wyprowadz.innerHTML = "Pole wynosi : " + wynik;
+    }
+
+    function obwod_Movchan(){
+
+        var a_mov = parseFloat(document.getElementsByName("a_dana_mov")[0].value);
+        var b_mov = parseFloat(document.getElementsByName("b_dana_mov")[0].value);
+
+        var wyprowadz = document.getElementsByName("wyprowadz_obwod_mov")[0];
+
+        var wynik = 2 * (a_mov + b_mov);
+        wyprowadz.innerHTML = "Obwod wynosi : " + wynik;
+    }
+</script>
+</head>
+
+<body>
+
+<div>
+    <input type="number" name="a_dana_mov" placeholder="Podaj pierwszą zmienną: ">
+    <input type="number" name="b_dana_mov" placeholder="Podaj drugą zmienną: ">
+</div>
+<div>
+    <button name="obw" onclick="obwod_Movchan()">Policz obwód</button>
+    <button name="pole" onclick="pole_Movchan()">Policz pole</button>
+</div>
+<div>
+    <div>
+        <p class="wynik" name="wyprowadz_pole_mov">Pole: </p>
+    </div>
+    <div>
+        <p class="wynik" name="wyprowadz_obwod_mov">Obwód: </p>
+    </div>
+</div>
+<div>
+    <button onclick="close_window()">Zamknij</button>
+</div>
+</body>
+
+</html>

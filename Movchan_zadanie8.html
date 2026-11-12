@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 8</title>
+    <style>
+        body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript">
+ function show_confirm()
+ {
+ var r=confirm("Naciśnij klawisz");
+ if (r==true)
+ { document.write("Nacisnąłeś OK!"); }
+ else
+ { document.write("Nacisnąłeś Cancel!"); }
+ } 
+         function okno_zamknij_movchan()  
+                       { 
+                             window.close() 
+                       } 
+ </script>
+</head>
+<body>
+    <div><button onclick="show_confirm()"> Pokaż confirm box</button></div> <br>
+    <div style="padding-left: 10px;"><button onclick="okno_zamknij_movchan()">zamknij okno </button></div>
+</body>
+</html>

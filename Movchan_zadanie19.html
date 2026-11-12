@@ -1,0 +1,44 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Zadanie 19</title>
+  <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+ </style>
+</head>
+<body>
+<script type="text/javascript">
+ function pole_movchan()
+ {
+var a_mov = parseFloat(document.getElementById('dlugosc').value);
+var b_mov = a_mov*a_mov;
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_mov.toFixed(2)+" cm^2";
+ }
+ function obwod_movchan()
+ {
+var a_mov = parseFloat(document.getElementById('dlugosc').value);
+var b_mov = 4*a_mov;
+ document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_mov.toFixed(2)+" cm";
+ }
+</script>
+ <h1>Wszystko o KWADRACIE</h1><br><br>
+ Podaj długość boku: <input type="number" id="dlugosc" placeholder="podaj długość"> cm<br><br><br>
+ <input type="button" name="pole" value="Oblicz pole" Onclick="pole_movchan()"><br><br>
+ <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_movchan()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>

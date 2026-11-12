@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 14</title>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+ </style>
+ 
+ <script language="JavaScript">
+function obliczenia () {
+    var liczba = prompt("Podaj mianownik:", "");
+    var m_mov = parseFloat(liczba);
+    document.write(("m = " + m_mov + "<br>").fontcolor("green").fontsize(42));
+    var m1 = m_mov + 2;
+    var m2 = (m_mov + 1) * (m_mov + 2);
+    var m3 = m_mov * (m_mov + 1);
+    document.write(("1/" + m_mov + " = 1/" + m1 + " + 1/" + m2 + " + 1/" + m3 + "<br>").fontcolor("green").fontsize(42)); 
+}   
+
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+ </head>
+<body>
+    <div> <button onclick="obliczenia()">Oblicz</button> </div>
+   <div> <button style="margin: 10px;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</body>
+</html>

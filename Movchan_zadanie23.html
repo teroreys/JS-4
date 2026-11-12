@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 23</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        function oblicz() {
+            var d = parseFloat(document.getElementsByName("d")[0].value);
+            var x = parseFloat(document.getElementsByName("x")[0].value);
+
+            var wyprowadzDrabina = document.getElementsByName("Drabina")[0];
+            var wyprowadzAlfa = document.getElementsByName("Alfa")[0];
+
+            var wynikDrabina = Math.sqrt(Math.pow(d, 2) + Math.pow(x, 2));
+            var wynikAlfa = Math.atan(d / x) * 180 / Math.PI;
+
+            wyprowadzDrabina.innerHTML = "Drabina wynosi : " + wynikDrabina;
+            wyprowadzAlfa.innerHTML = "Alfa wynosi : " + wynikAlfa.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="number" name="d" placeholder="Podaj D (wysokość): ">
+        <input type="number" name="x" placeholder="Podaj X (Odległość): ">
+    </div>
+
+    <div>
+        <p class="wynik" name="Drabina">Drabina: </p>
+        <p class="wynik" name="Alfa">Alfa: </p>
+    </div>
+    <div>
+        <button onclick="oblicz()">Oblicz</button>
+    </div>
+    <div>
+        <button onclick="close_window()">Zamknij</button>
+    </div>
+</body>
+
+</html>

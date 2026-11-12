@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 17</title>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 30px;
+                        text-align: left;
+                        margin: 0;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            font-size: 25px;
+        }
+
+        h2 {font-size: 30px;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 60%;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            text-align: center;
+        }
+ </style>
+ 
+ <script language="JavaScript">
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+ </head>
+<body>
+    <div><h1>Teoria</h1></div>
+    <p>Cztery sposoby <b><u>wyprowadzania</u></b> danych na stronę:</p> <br>
+    <ul>
+        <li>
+            z użyciem dokument.write()
+        </li>
+        <li>
+            z użyciem okienka alert()
+        </li>
+        <li>
+            do okienek formularza
+        </li>
+        <li>
+            do tabeli
+        </li>
+    </ul>
+<h2>Co to jest funkcja?</h2>
+
+    <ul>
+        <li>
+            Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy.
+        </li>
+        <li>
+            Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod.
+        </li>
+        <li>
+            Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b)
+        </li>
+        <li>
+             Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b> return </b>
+        </li>
+    </ul>
+    <h2><u>Wybrane metody obiektu document</u></h2>
+    <div>
+<table>
+	<tr><th style="width: 50%;">Metoda</th><th>Opis</th></tr>
+	<tr><td>getElementById("id ")</td><td>dostęp do wszystkich elementów o konkretnej
+wartości atrybutu id </td></tr>
+	<tr><td>getElementByTagName("znacznik ") </td><td>dostęp do wszystkich elementów o typie
+znacznika, np. P lub DIV </td></tr>
+	<tr><td>getElementByName("nazwa") </td><td>dostęp do wszystkich elementów o konkretnej
+wartości atrybutu/td></tr>
+</table>
+    </div>
+    <h2><u>Właściwości tak pobranego elementu to:</u></h2>
+        <ul>
+            <li><b>innerHTML</b> – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli,</li>
+            <li><b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie, </li>
+            <li><b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+        </ul>
+   <div> <button style="margin: 10px;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</body>
+</html>

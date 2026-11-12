@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 24 KOD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+    <textarea rows="41" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 24</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+        function oblicz() {
+            var x1_mov = parseFloat(prompt("Podaj pierwszą liczbe (x1):"));
+            var x2_mov = parseFloat(prompt("Podaj pierwszą liczbe (x2):"));
+            var wczytaneL = document.getElementsByName("wczytane")[0];
+            wczytaneL.innerHTML = "x1 = " +x1_mov + ", x2 = " +x2_mov;
+            var wynik = document.getElementsByName("wynik")[0];
+            var rad = (x1_mov * Math.PI) / 180;
+            var y1 = 3 * Math.pow(x1_mov, 6 / 8);
+            var y2 = 2 * Math.cos(rad) + 3 * Math.sin(rad);
+            var y3 = Math.pow(Math.pow(x1_mov, 5) + 2 * Math.pow(x2_mov, 4), 1 / 3) * Math.abs(x1_mov - x2_mov);
+            wynik.innerHTML = "y1 = " + y1.toFixed(2) +"<br>" + "y2 = " + y2.toFixed(2) +"<br>"+"y3 = " + y3.toFixed(2) +"<br>";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="oblicz()">Oblicz</button>
+    </div>
+        <div>
+        <p class="wynik" name="wczytane">Wczytane lizcby: </p>
+        </div>
+
+        <div>        <p class="wynik" name="wynik">wynik: </p>
+    </div>
+    <div>
+        <button onclick="close_window()">Zamknij</button>
+    </div>
+</body>
+</html>
+    </textarea>
+    </div>
+<div> <button onclick="close_window()">Zamknij </button> </div>
+</div>
+</body>
+</html>

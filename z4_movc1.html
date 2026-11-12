@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Movchan 2P</title>
+</head>
+<script>
+    function okno_zamknij()  
+                       { 
+                             window.close() 
+                       } 
+</script>
+<body>
+
+    <p>1) kiedy powstał JavaScript (podaj datę).<br>
+    <strong>4 grudnia 1995 roku</strong></p>
+
+    <p>2) dlaczego jest to język skryptowy<br>
+    Kod jest interpretowany na zywo</p>
+
+    <p>3) gdzie jest wykonywany JS (klient lub serwer)<br>
+    <strong>u klienta</strong> (w przeglądarce).</p>
+
+    <p>4) dlaczego jest JS to bezpieczne narzędzie<br>
+    Działa w izolowanym środowisku (piaskownicy) i nie ma dostępu do dysku twardego użytkownika.</p>
+
+    <p>5) czy jest to język obiektowy, jeśli tak to dlaczego.<br>
+    <strong>Tak</strong>, opiera się na obiektach i dziedziczeniu prototypowym.</p>
+
+    <p>6) wymień zalety JS:<br>
+    <strong>Szybkość</strong> – działa natychmiast w przeglądarce.<br>
+ <strong>Popularność</strong> – ogromna społeczność i gotowe biblioteki.<br>
+     <strong>Uniwersalność</strong> – tworzy strony, serwery i aplikacje.</p>
+    <p>7) Framework to:<br>
+    <strong>Gotowy szkielet </strong> z narzędziami przyspieszającymi pisanie kodu.</p>
+
+    <p>8) Do aplikacji mobilnych można użyć Framework<br>
+    <strong>React Native</strong>.</p>
+
+    <p>9) Aplikacje responsywne to:<br>
+    Strony dopasowujące swój wygląd do każdego ekranu roznych urzadzen.</p>
+
+    <p>10) Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu<br>
+    &lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;<br>
+    funkcja uruchamia nowe okno</p>
+
+    <p>11) Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu<br>
+    window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
+    Otwiera małe okienko (160x280px) z plikiem "obraz.html" w wyznaczonym miejscu ekranu i ukrywa menu.</p>
+
+  <p>  - <strong>toolbar=no</strong> &rarr; ukrywa pasek narzędzi (wstecz, dalej)<br>
+    - <strong>directories=no</strong> &rarr; ukrywa pasek zakładek i katalogów<br>
+- <strong>menubar=no</strong> &rarr; ukrywa menu przeglądarkki (Plik, Edycja)<br>
+- <strong>height=280</strong> &rarr; ustawia wysokość okna na 280 pikseli<br>
+- <strong>width=160</strong> &rarr; ustawia szerokość okna na 160 pikseli<br>
+- <strong>top=200</strong> &rarr; ustawia odległość 200 pikseli od góry ekranu<br>
+- <strong>left=200</strong> &rarr; ustawia odległość 200 pikseli od lewej krawędzi</p>
+        </p>
+
+        <p>
+            12)Opisz następującą instrukcję window.close() <br>
+            Funkcja wykonuje zamykanie okna.
+        </p>
+
+        <p>Gdy chcesz wyświetlić instrukcję, która nie powinna się wykonywać a tylko wyświetlać masz dwie możliwości:</p>
+
+<p><strong>Pierwsza możliwość:</strong><br>
+Znak &lt; możesz wyświetlić jako <code>&amp;lsaquo;</code> (lub bezpieczniej dla kodu HTML: <code>&amp;lt;</code>).<br>
+Znak &gt; możesz wyświetlić jako <code>&amp;rsaquo;</code> (lub bezpieczniej dla kodu HTML: <code>&amp;gt;</code>).</p>
+
+<p><strong>Druga możliwość:</strong><br>
+Tekst możesz umieścić w <strong>znacznikach <code>&lt;xmp&gt;...&lt;/xmp&gt;</code>, <code>&lt;pre&gt;...&lt;/pre&gt;</code> lub <code>&lt;code&gt;...&lt;/code&gt;</code></strong>. <br>
+<strong>Wyjaśnienie:</strong> Znacznik <code>&lt;xmp&gt;</code> (lub nowocześniejsze połączenie <code>&lt;pre&gt;&lt;code&gt;</code>) sprawia, że przeglądarka automatycznie traktuje całą zawartość jako zwykły tekst i wyświetla surowy kod zamiast go interpretować i wykonywać.</p>
+
+<hr>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+ &lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+ &lt;meta http-equiv="Content-Script-Type" content="text/javascript"&gt;
+ &lt;title&gt;Moja strona WWW&lt;/title&gt;
+ &lt;script type="text/javascript"&gt;
+ function onclickHandler()
+ {
+ alert('Akapit został kliknięty!');
+ }
+ &lt;/script&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;p onclick="onclickHandler();"&gt;Kliknij ten akapit,
+ a pojawi się okno dialogowe.&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<hr>
+    <form>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+    </form>
+
+</body>
+</html>

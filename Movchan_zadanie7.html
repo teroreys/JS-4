@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 7</title>
+    <style>
+        body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+        }
+        button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+    <script type="text/javascript"> function show_alert() { alert("Uwaga!"); } </script> 
+    <script>
+        function okno_zamknij_movchan()  
+                       { 
+                             window.close() 
+                       } 
+    </script>
+</head>
+<body>
+    <h2>Zastosowanie: </h2>
+    <p>
+        Jest używany do przekazywania informacji użytkownikowi. Użytkownik musi nacisnąć ok. aby <br>
+       potwierdził jej przeczytanie
+    </p>
+    <button onclick="show_alert()"> Pokaż Alert Box </button>
+    <div><button onclick="okno_zamknij_movchan()">zamknij okno </button></div>
+</body>
+</html>

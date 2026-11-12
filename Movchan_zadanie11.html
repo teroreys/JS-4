@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 11</title>
+ <style>
+            body {
+            padding: 20px;
+            font-size: 18px;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                button {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;   
+            background-color: red;
+            color: aliceblue;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+ </style>
+ 
+ <script language="JavaScript">
+        function obliczenia () {
+        var D1_Mov=prompt("Podaj pierwszy dzien miesiąca:","");
+        var D2_Mov=prompt("Podaj drugi dzien miesiąca:","");
+        var a=parseFloat(D1_Mov);
+        var b=parseFloat(D2_Mov);
+        var obliczenia;
+        var wynik;
+        obliczenia = a - b;
+        wynik = obliczenia * 86400;
+    document.write(("Tyle minęło między tymi dniami dla północy obu dni: " + wynik + " sekund.").fontcolor("green").fontsize(42)); }
+
+            function okno_zamknij_movchan() { 
+            window.close(); 
+        } 
+ </script>
+ </head>
+<body>
+    <div> <button onclick="obliczenia()">Oblicz</button> </div>
+   <div> <button style="margin: 10px;" onclick="okno_zamknij_movchan()">zamknij okno </button> </div>
+</body>
+</html>
